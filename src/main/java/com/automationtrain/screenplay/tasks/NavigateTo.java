@@ -2,6 +2,7 @@ package com.automationtrain.screenplay.tasks;
 
 import com.automationtrain.screenplay.pages.BasicCheckboxDemoWebsite;
 import com.automationtrain.screenplay.pages.BasicFormDemoWebsite;
+import com.automationtrain.screenplay.pages.BasicSelectDropdownDemoWebsite;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -29,5 +30,10 @@ public class NavigateTo implements Task {
         return instrumented(NavigateTo.class, page);
     }
 
+
+    public static NavigateTo theBasicSelectDropdownDemoWebsite(){
+        page = BasicSelectDropdownDemoWebsite.class;
+        return instrumented(NavigateTo.class, page);
+    }
 
 }

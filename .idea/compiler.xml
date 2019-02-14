@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Automation" />
+        <module name="automationtrain" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="automationtrain" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
